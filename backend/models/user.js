@@ -9,4 +9,11 @@ const userSchema = new Schema({
   role: { type: String, required: true },  
 });
 
+
+userSchema.plugin(uniqueValidator, {
+  path: "userid",
+  message:
+    "There already an account exists with this userid. Try different userid.",
+});
+
 module.exports = mongoose.model("User", userSchema);

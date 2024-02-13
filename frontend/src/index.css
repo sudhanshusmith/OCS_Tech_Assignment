@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+  background-color: #0d042a;
+}
+
+.button_design {
+  background: radial-gradient(
+    53.57% 53.57% at 49.82% 95.71%,
+    #a47cf3 0%,
+    #683fea 100%
+  );
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset,
+    0px -4px 4px 0px rgba(0, 0, 0, 0.2) inset,
+    0px 0px 0px 4px rgba(255, 255, 255, 0.07),
+    0px 0px 120px 0px rgba(153, 23, 255, 0.6);
+}
